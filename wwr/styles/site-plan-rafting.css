@@ -1,17 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Rancho&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 :root {
     --primary-color: #44414E;
-    --secondary-color: #70D7FF;
-    --accent1-color: #D2E18E;
+    --secondary-color: #57B8FF;
+    --accent1-color: #CBEFB6;
+    --accent2-color: #D0FFCE;
 
-    --heading-font: "Rancho", cursive;
+    --heading-font: "Roboto Mono", monospace;
     --paragraph-font: "Roboto", sans-serif;
 
-    --nav-background-color: #70D7FF;
+    --nav-background-color: #CBEFB6;
     --nav-link-color: #44414E;
     --nav-hover-link-color: #44414E;
-    --nav-hover-background-color: #D2E18E;
+    --nav-hover-background-color: #D0FFCE;
 }
 
 body {
@@ -27,7 +28,7 @@ h1, h2, h3, h4, h5, h6 {
 
 header {
     padding: 20px;
-    background-color: var(--accent1-color);
+    background-color: var(--secondary-color);
 }
 
 p {
