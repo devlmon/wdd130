@@ -40,8 +40,6 @@ main {
 
 aside {
     width: 20rem;
-    background-color: #eee;
-    color: #274862;
     position: relative;
 }
 
@@ -68,6 +66,8 @@ footer {
     margin: 1rem;
     border: 5px solid #274862;
     padding: 1rem;
+    background-color: #eee;
+    color: #274862;
 }
 
 .indent {
