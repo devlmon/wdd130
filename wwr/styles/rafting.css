@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #44414E;
+    --secondary-color: #57B8FF;
+    --accent1-color: #CBEFB6;
+    --accent2-color: #D0FFCE;
+
+    --heading-font: "Roboto Mono", monospace;
+    --paragraph-font: "Roboto", sans-serif;
+
+    --nav-background-color: #CBEFB6;
+    --nav-link-color: #44414E;
+    --nav-hover-link-color: #44414E;
+    --nav-hover-background-color: #D0FFCE;
+}
+
+body, footer {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 20px;
+    background-color: var(--secondary-color);
+}
+
+header nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+
+header nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+header nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+p {
+    padding: 25px;
+    color: var(--primary-color);
+}
+
+footer nav {
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer p {
+    padding: 3rem 0 0 0;
+    text-align: center;
+}
+
+footer img {
+    height: 2.5rem;
+}
+
+div[class="hero"] {
+    margin: 10px auto;
+    position: relative;
+}
+
+/* Class Selectors */
+
+.hero h1 {
+    position: absolute;
+    top: 3rem;
+    width: 100%;
+    text-align: center;
+    font-size: 5rem;
+    background-color: #57B8FFDD;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.hero article {
+    width: 65%;
+    position: absolute;
+    top: 28rem;
+    background-color: #57B8FFDD;
+    padding: 1rem;
+}
+
+.hero article img {
+    display: inline;
+    position: relative;
+    width: 5rem;
+    height: auto;
+    float: right;
+    margin: .5rem;
+    border: var(--primary-color) solid 0.5rem;
+}
+
+.hero article p {
+    display: inline;
+    position: relative;
+    text-align: center;
+}
