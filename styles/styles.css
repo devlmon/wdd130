@@ -86,6 +86,10 @@ footer {
     color: #274862;
 }
 
+.box h2 {
+    color: #fff;
+}
+
 .indent {
     padding-left: 2rem;
 }
