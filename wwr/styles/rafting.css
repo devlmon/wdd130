@@ -27,29 +27,42 @@ body, footer {
     margin: 0 auto;
 }
 
+header, section, footer {
+    border: .25rem solid var(--primary-color);
+    padding: .25rem;
+    margin: 0 0 .7rem 0;
+}
+
 header {
+    display: grid;
+    grid-template-columns: 1.5fr 2.5fr;
     padding: 20px;
     background-color: var(--secondary-color);
 }
 
-header nav {
-    background-color: var(--nav-background-color);
-    font-size: 1.2rem;
-    display: flex;
+header img {
+    border: .25rem solid var(--primary-color);
 }
 
-header nav a {
+nav div[class="flexbox"] {
+    border: .25rem solid var(--primary-color);
+    background-color: var(--nav-background-color);
+    font-size: 1.3rem;
+    width: 75%;
+}
+
+div[class="flexbox"] a {
     display: block;
     color: var(--nav-link-color);
     text-decoration: none;
     padding: 1rem;
 }
 
-header nav a:link, nav a:visited {
+div[class="flexbox"] a:link, nav a:visited {
     color: var(--nav-link-color);
 }
 
-nav a:hover {
+div[class="flexbox"] a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
 }
@@ -64,17 +77,19 @@ p {
     color: var(--primary-color);
 }
 
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 10rem;
+}
+
 footer nav {
     text-align: center;
 }
 
 footer a {
     text-decoration: none;
-}
-
-footer p {
-    padding: 3rem 0 0 0;
-    text-align: center;
 }
 
 footer img {
@@ -86,6 +101,11 @@ div[class="hero"] {
     position: relative;
 }
 
+section h2 {
+    text-align: center;
+}
+
+
 /* Class Selectors */
 
 .hero h1 {
@@ -93,7 +113,7 @@ div[class="hero"] {
     top: 3rem;
     width: 100%;
     text-align: center;
-    font-size: 5rem;
+    font-size: 3.5rem;
     background-color: #57B8FFDD;
 }
 
@@ -101,12 +121,14 @@ div[class="hero"] {
     width: 100%;
     height: auto;
     object-fit: cover;
+    border-top: .25rem solid var(--primary-color);
+    border-bottom: .25rem solid var(--primary-color);
 }
 
 .hero article {
     width: 65%;
     position: absolute;
-    top: 28rem;
+    top: 22rem;
     background-color: #57B8FFDD;
     padding: 1rem;
 }
@@ -114,15 +136,48 @@ div[class="hero"] {
 .hero article img {
     display: inline;
     position: relative;
-    width: 5rem;
+    width: 4.5rem;
     height: auto;
     float: right;
-    margin: .5rem;
-    border: var(--primary-color) solid 0.5rem;
+    margin: .2rem;
+    border: .25rem solid var(--primary-color);
 }
 
 .hero article p {
     display: inline;
     position: relative;
     text-align: center;
+    font-size: 1rem;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.history {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.history img {
+    border: .25rem solid var(--primary-color);
+}
+
+.promotion {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    margin: 1rem;
+}
+
+.promotion img {
+    width: 150px;
+    height: auto;
+    border: .25rem solid var(--secondary-color);
 }
